@@ -1,5 +1,5 @@
-Hello everyone !
-My name is Vitaliy and i'am a junior front-end developer.
-You can see some of my work here.
+Hello everyone !</br>
+My name is Vitaliy and i'am a junior front-end developer.</br>
+You can see some of my work here.</br>
 :P
 
