@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VR - Work</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+</head>
+
+<body class="page">
+  <svg xmlns="http://www.w3.org/2000/svg" display="none">
+    <symbol id="github" viewBox="0 0 512 512">
+      <path d="M256 0C114.615 0 0 114.615 0 256s114.615 256 256 256 256-114.615 256-256S397.385 0 256 0zm152.027 408.027c-19.76 19.759-42.756 35.267-68.354 46.094a213.671 213.671 0 0 1-19.801 7.246V423c0-20.167-6.916-35-20.75-44.5 8.668-.833 16.625-2 23.875-3.5s14.918-3.667 23-6.5c8.084-2.833 15.334-6.208 21.75-10.125 6.418-3.917 12.584-9 18.5-15.25 5.918-6.25 10.875-13.333 14.875-21.25s7.168-17.417 9.5-28.5c2.334-11.083 3.5-23.292 3.5-36.625 0-25.833-8.416-47.833-25.25-66 7.668-20 6.834-41.75-2.5-65.25l-6.25-.75c-4.332-.5-12.125 1.333-23.375 5.5s-23.875 11-37.875 20.5c-19.832-5.5-40.416-8.25-61.749-8.25-21.5 0-42 2.75-61.5 8.25-8.833-6-17.208-10.958-25.125-14.875s-14.25-6.583-19-8-9.167-2.292-13.25-2.625-6.708-.417-7.875-.25-2 .333-2.5.5c-9.333 23.667-10.167 45.417-2.5 65.25-16.833 18.167-25.25 40.167-25.25 66 0 13.333 1.167 25.542 3.5 36.625s5.5 20.583 9.5 28.5 8.958 15 14.875 21.25 12.083 11.333 18.5 15.25 13.667 7.292 21.75 10.125 15.75 5 23 6.5 15.208 2.667 23.875 3.5c-13.667 9.333-20.5 24.167-20.5 44.5v39.115a213.687 213.687 0 0 1-22.3-7.994c-25.597-10.827-48.594-26.335-68.353-46.094-19.758-19.758-35.267-42.756-46.093-68.354C46.679 313.195 41 285.043 41 256s5.679-57.195 16.879-83.675c10.827-25.597 26.335-48.594 46.093-68.353 19.758-19.759 42.756-35.267 68.353-46.093C198.805 46.679 226.957 41 256 41s57.195 5.679 83.676 16.879c25.598 10.827 48.594 26.335 68.354 46.093 19.758 19.758 35.266 42.756 46.092 68.353C465.32 198.805 471 226.957 471 256s-5.68 57.195-16.879 83.675c-10.826 25.596-26.336 48.595-46.094 68.352z"/>
+    </symbol>
+    <symbol id="htmlacademy" viewBox="0 0 60 60">
+      <path d="M30.2 5H30L10.3 7.1v36.2L30 55l19.7-11.7V7.1L30.2 5zm17 36.8L30 52 12.8 41.8V27l17.1 10.2V39l-11.7-7v1.8L30 40.9v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8L29.9 12.8 12.8 23V9.4L30 7.6l17.2 1.8V23z"/>
+    </symbol>
+    <symbol id="vk" viewBox="0 0 96.496 96.496">
+      <path d="M92.499 65.178c-2.873-3.446-6.254-6.387-9.453-9.51-2.886-2.815-3.068-4.448-.748-7.697 2.532-3.546 5.255-6.956 7.81-10.486 2.385-3.299 4.823-6.589 6.078-10.539.796-2.513.092-3.623-2.485-4.063-.444-.077-.903-.081-1.355-.081l-15.289-.018c-1.883-.028-2.924.793-3.59 2.462-.899 2.256-1.826 4.51-2.897 6.687-2.43 4.936-5.144 9.707-8.949 13.747-.839.891-1.767 2.017-3.169 1.553-1.754-.64-2.271-3.53-2.242-4.507l-.015-17.647c-.34-2.521-.899-3.645-3.402-4.135l-15.882.003c-2.12 0-3.183.819-4.315 2.145-.653.766-.85 1.263.492 1.517 2.636.5 4.121 2.206 4.515 4.849.632 4.223.588 8.463.224 12.703-.107 1.238-.32 2.473-.811 3.629-.768 1.817-2.008 2.187-3.637 1.069-1.475-1.012-2.511-2.44-3.525-3.874-3.809-5.382-6.848-11.186-9.326-17.285-.716-1.762-1.951-2.83-3.818-2.859a389.727 389.727 0 0 0-13.762.004c-2.76.052-3.583 1.392-2.459 3.894 4.996 11.113 10.557 21.917 17.816 31.759 3.727 5.051 8.006 9.51 13.534 12.67 6.265 3.582 13.009 4.66 20.112 4.328 3.326-.156 4.325-1.021 4.479-4.336.104-2.268.361-4.523 1.48-6.561 1.098-2 2.761-2.381 4.678-1.137.959.623 1.767 1.416 2.53 2.252 1.872 2.048 3.677 4.158 5.62 6.137 2.437 2.48 5.324 3.945 8.954 3.646l14.052.003c2.264-.148 3.438-2.924 2.138-5.451-.913-1.77-2.111-3.346-3.383-4.871z"/>
+    </symbol>
+  </svg>
+  <div class="bg bg--blue">
+    <div class="wrapper">
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" type="button">Меню</button>
+        <div class="menu-overlay menu-overlay--closed">
+          <ul class="main-nav__items">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="works.html">Проекты</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="about.html">Обо мне</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="main-content main-content--violet">
+        <div class="works">
+          <div class="works__wrapper">
+            <h1 class="title">Проекты</h1>
+            <div class="work__projects">
+              <div class="work__project">
+                <a href="http://VitaliyRiva.github.io/portfolio/Technomart" target="_blank" class="work__project-preview">
+                  <div class="work__project-photo">
+                    <img src="img/technomart.png" alt="Учебный проект Техномарт" class="work__project-img">
+                    <div class="work__project-hover">
+                      <span class="work__project-hover-text">Техномарт</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="work__project-descr">
+                  <p class="work__project-descr-info">Учебный проект от HTML Academy</p>
+                  <a href="#" target="_blank" class="work__project-link btn">Превью</a>
+                </div>
+              </div>
+              <div class="work__project">
+                <a href="http://VitaliyRiva.github.io/portfolio/Mishka" target="_blank" class="work__project-preview">
+                  <div class="work__project-photo">
+                    <img src="img/mishka.png" alt="Учебный проект Мишка" class="work__project-img">
+                    <div class="work__project-hover">
+                      <span class="work__project-hover-text">Мишка</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="work__project-descr">
+                  <p class="work__project-descr-info">Учебный проект от HTML Academy</p>
+                  <a href="#" target="_blank" class="work__project-link btn">Превью</a>
+                </div>
+              </div>
+              <div class="work__project">
+                <a href="http://VitaliyRiva.github.io/portfolio/Panakeia" target="_blank" class="work__project-preview">
+                  <div class="work__project-photo">
+                    <img src="img/panakeia.png" alt="Учебный проект от HTML Academy" class="work__project-img">
+                    <div class="work__project-hover">
+                      <span class="work__project-hover-text">Panakeia</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="work__project-descr">
+                  <p class="work__project-descr-info">Учебный проект от HTML Academy</p>
+                  <a href="#" target="_blank" class="work__project-link btn">Превью</a>
+                </div>
+              </div>
+              <div class="work__project">
+                <a href="http://VitaliyRiva.github.io/portfolio/Landing-quotes" target="_blank" class="work__project-preview">
+                  <div class="work__project-photo">
+                    <img src="img/landing-quotes.png" alt="Учебный проект от HTML Academy" class="work__project-img">
+                    <div class="work__project-hover">
+                      <span class="work__project-hover-text">Landing-Quotes</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="work__project-descr">
+                  <p class="work__project-descr-info">Учебный проект от HTML Academy</p>
+                  <a href="#" target="_blank" class="work__project-link btn">Превью</a>
+                </div>
+              </div>
+              <div class="work__project">
+                <a href="http://VitaliyRiva.github.io/portfolio/Landing-eclipse" target="_blank" class="work__project-preview">
+                  <div class="work__project-photo">
+                    <img src="img/landing-eclipse.png" alt="Учебный проект от HTML Academy" class="work__project-img">
+                    <div class="work__project-hover">
+                      <span class="work__project-hover-text">Landing-Eclipse</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="work__project-descr">
+                  <p class="work__project-descr-info">Учебный проект от HTML Academy</p>
+                  <a href="#" target="_blank" class="work__project-link btn">Превью</a>
+                </div>
+              </div>
+              <div class="work__project">
+                <a href="http://VitaliyRiva.github.io/portfolio/Landing-headphones" target="_blank" class="work__project-preview">
+                  <div class="work__project-photo">
+                    <img src="img/landing-headphones.png" alt="Учебный проект от HTML Academy" class="work__project-img">
+                    <div class="work__project-hover">
+                      <span class="work__project-hover-text">Landing-Headphones</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="work__project-descr">
+                  <p class="work__project-descr-info">Учебный проект от HTML Academy</p>
+                  <a href="#" target="_blank" class="work__project-link btn">Превью</a>
+                </div>
+              </div>
+              <div class="work__project">
+                <a href="http://VitaliyRiva.github.io/portfolio/Industrial" target="_blank" class="work__project-preview">
+                  <div class="work__project-photo">
+                    <img src="img/industrial.png" alt="Учебный проект от HTML Academy" class="work__project-img">
+                    <div class="work__project-hover">
+                      <span class="work__project-hover-text">Industrial</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="work__project-descr">
+                  <p class="work__project-descr-info">Учебный проект от HTML Academy</p>
+                  <a href="#" target="_blank" class="work__project-link btn">Превью</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="contacts__email">
+            <a class="contacts__link" href="mailto:bu.vitaliy@yandex.ru">bu.vitaliy@yandex.ru</a>
+          </div>
+          <div class="contacts__phone">
+            <a class="contacts__link" href="tel:+79215858363">+7 (921) 585-83-63</a>
+          </div>
+          <div class="social">
+            <a href="#" class="social__link">
+                <svg class="social__link-icon" width="26px" height="26px">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#vk"></use>
+                </svg>
+              </a>
+            <a href="#" class="social__link">
+                <svg class="social__link-icon" width="26px" height="26px">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#github"></use>
+                </svg>
+              </a>
+            <a href="#" class="social__link">
+                <svg class="social__link-icon" width="26px" height="26px">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#htmlacademy"></use>
+                </svg>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/js-min.js"></script>
+</body>
+
+</html>

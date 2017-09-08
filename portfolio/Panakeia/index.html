@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ash.github.io</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body class="page">
+  <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="github-logo" viewBox="0 0 512 512">
+      <path d="M256 0C114.615 0 0 114.615 0 256s114.615 256 256 256 256-114.615 256-256S397.385 0 256 0zm152.027 408.027c-19.76 19.759-42.756 35.267-68.354 46.094a213.671 213.671 0 0 1-19.801 7.246V423c0-20.167-6.916-35-20.75-44.5 8.668-.833 16.625-2 23.875-3.5s14.918-3.667 23-6.5c8.084-2.833 15.334-6.208 21.75-10.125 6.418-3.917 12.584-9 18.5-15.25 5.918-6.25 10.875-13.333 14.875-21.25s7.168-17.417 9.5-28.5c2.334-11.083 3.5-23.292 3.5-36.625 0-25.833-8.416-47.833-25.25-66 7.668-20 6.834-41.75-2.5-65.25l-6.25-.75c-4.332-.5-12.125 1.333-23.375 5.5s-23.875 11-37.875 20.5c-19.832-5.5-40.416-8.25-61.749-8.25-21.5 0-42 2.75-61.5 8.25-8.833-6-17.208-10.958-25.125-14.875s-14.25-6.583-19-8-9.167-2.292-13.25-2.625-6.708-.417-7.875-.25-2 .333-2.5.5c-9.333 23.667-10.167 45.417-2.5 65.25-16.833 18.167-25.25 40.167-25.25 66 0 13.333 1.167 25.542 3.5 36.625s5.5 20.583 9.5 28.5 8.958 15 14.875 21.25 12.083 11.333 18.5 15.25 13.667 7.292 21.75 10.125 15.75 5 23 6.5 15.208 2.667 23.875 3.5c-13.667 9.333-20.5 24.167-20.5 44.5v39.115a213.687 213.687 0 0 1-22.3-7.994c-25.597-10.827-48.594-26.335-68.353-46.094-19.758-19.758-35.267-42.756-46.093-68.354C46.679 313.195 41 285.043 41 256s5.679-57.195 16.879-83.675c10.827-25.597 26.335-48.594 46.093-68.353 19.758-19.759 42.756-35.267 68.353-46.093C198.805 46.679 226.957 41 256 41s57.195 5.679 83.676 16.879c25.598 10.827 48.594 26.335 68.354 46.093 19.758 19.758 35.266 42.756 46.092 68.353C465.32 198.805 471 226.957 471 256s-5.68 57.195-16.879 83.675c-10.826 25.596-26.336 48.595-46.094 68.352z"/>
+  </symbol>
+  <symbol id="github" viewBox="0 0 16 16">
+    <path d="M8 0a8 8 0 0 0-8 8 8 8 0 0 0 5.47 7.59c.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.09-.202-.36-1.015.07-2.117 0 0 .67-.215 2.2.82a7.67 7.67 0 0 1 2-.27 7.67 7.67 0 0 1 2 .27c1.52-1.035 2.19-.82 2.19-.82.43 1.102.16 1.915.08 2.117a3.1 3.1 0 0 1 .82 2.147c0 3.073-1.87 3.75-3.65 3.947.28.24.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.14.46.55.38A7.972 7.972 0 0 0 16 8a8 8 0 0 0-8-8"/>
+  </symbol>
+  <symbol id="htmlacademy" viewBox="0 0 60 60">
+    <path d="M30.2 5H30L10.3 7.1v36.2L30 55l19.7-11.7V7.1L30.2 5zm17 36.8L30 52 12.8 41.8V27l17.1 10.2V39l-11.7-7v1.8L30 40.9v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8L29.9 12.8 12.8 23V9.4L30 7.6l17.2 1.8V23z"/>
+  </symbol>
+    <symbol id="vk" viewBox="0 0 304.36 304.36">
+      <path d="M261.945 175.576c10.096 9.857 20.752 19.131 29.807 29.982 4 4.822 7.787 9.798 10.684 15.394 4.105 7.955.387 16.709-6.746 17.184l-44.34-.02c-11.436.949-20.559-3.655-28.23-11.474-6.139-6.253-11.824-12.908-17.727-19.372-2.42-2.642-4.953-5.128-7.979-7.093-6.053-3.929-11.307-2.726-14.766 3.587-3.523 6.421-4.322 13.531-4.668 20.687-.475 10.441-3.631 13.186-14.119 13.664-22.414 1.057-43.686-2.334-63.447-13.641-17.422-9.968-30.932-24.04-42.691-39.971-22.895-31.021-40.428-65.108-56.186-100.15C-2.01 76.458.584 72.22 9.295 72.07c14.465-.281 28.928-.261 43.41-.02 5.879.086 9.771 3.458 12.041 9.012 7.826 19.243 17.402 37.551 29.422 54.521 3.201 4.518 6.465 9.036 11.113 12.216 5.142 3.521 9.057 2.354 11.476-3.374 1.535-3.632 2.207-7.544 2.553-11.434 1.146-13.383 1.297-26.743-.713-40.079-1.234-8.323-5.922-13.711-14.227-15.286-4.238-.803-3.607-2.38-1.555-4.799 3.564-4.172 6.916-6.769 13.598-6.769h50.111c7.889 1.557 9.641 5.101 10.721 13.039l.043 55.663c-.086 3.073 1.535 12.192 7.07 14.226 4.43 1.448 7.35-2.096 10.008-4.905 11.998-12.734 20.561-27.783 28.211-43.366 3.395-6.852 6.314-13.968 9.143-21.078 2.096-5.276 5.385-7.872 11.328-7.757l48.229.043c1.43 0 2.877.021 4.262.258 8.127 1.385 10.354 4.881 7.844 12.817-3.955 12.451-11.65 22.827-19.174 33.251-8.043 11.129-16.645 21.877-24.621 33.072-7.328 10.223-6.746 15.376 2.357 24.255zm0 0" fill-rule="evenodd" clip-rule="evenodd"/>
+  </symbol>
+  </svg>
+  <header class="page-header">
+    <nav class="main-nav main-nav--nojs main-nav--closed">
+      <div class="main-nav__wrapper">
+        <div class="main-nav__logo">
+          <a href="#">Panakeia</a>
+          <span>Restaurant</span>
+        </div>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Home</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Menu</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Delivery</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">News</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="intro">
+    <div class="intro__wrapper">
+      <div class="intro__header">
+        <h1 class="intro__text-title">Integer at tortor ut magna</h1>
+        <span class="intro__text-subtitle">finibus lobortis sed quis tellus.</span>
+      </div>
+      <div class="intro__items">
+        <div class="intro__item">
+          <div class="intro__item-photo">
+            <img src="img/intro__item-1.png" alt="" width="148" height="148">
+          </div>
+          <div class="intro__item-descr">
+            <p class="intro__item-title">Tincidunt</p>
+            <span class="intro__item-text">Phasellus arcu justo, ullamcorper non diam sit amet, luctus condimentum metus. Nullam tempus egestas efficitur. Sed quam dolor.</span>
+          </div>
+        </div>
+        <div class="intro__item">
+          <div class="intro__item-photo">
+            <img src="img/intro__item-2.png" alt="" width="148" height="148">
+          </div>
+          <div class="intro__item-descr">
+            <p class="intro__item-title">Donec ligula</p>
+            <span class="intro__item-text">Ut arcu arcu, faucibus eu risus blandit, pulvinar viverra justo. Phasellus arcu justo, ullamcorper non diam sit amet, luctus condimentum metus. In hac habitasse platea dictumst.</span>
+          </div>
+        </div>
+        <div class="intro__item">
+          <div class="intro__item-photo">
+            <img src="img/intro__item-3.png" alt="" width="148" height="148">
+          </div>
+          <div class="intro__item-descr">
+            <p class="intro__item-title">Duis bibendum</p>
+            <span class="intro__item-text">Nullam tempus egestas efficitur. Sed quam dolor, vulputate sed mattis et, sodales quis orci. Ut arcu arcu, faucibus eu risus blandit.</span>
+          </div>
+        </div>
+        <a href="#" class="btn intro__btn">Read more</a>
+      </div>
+    </div>
+  </div>
+  <div class="news">
+    <div class="news__wrapper">
+      <div class="news__header">
+        <h2 class="news__header-title">Our news</h2>
+      </div>
+      <div class="news__items">
+        <div class="news__item">
+          <div class="news__item-photo">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/news__item-photo-1(1150).jpg">
+              <source media="(min-width: 768px)" srcset="img/news__item-photo-1(768).jpg">
+              <img src="img/news__item-photo-1.jpg" alt="" width="260" height="178">
+            </picture>
+          </div>
+          <div class="news__item-descr">
+            <p class="news__item-title">Burger-Beer</p>
+            <span class="news__item-text">Est a elit scelerisque vestibulum. Donec est sem, lobortis sit amet imperdiet vel, pretium lobortis erat. Nulla vitae hendrerit odio.</span>
+            <a href="#" class="btn news__btn">Read more</a>
+          </div>
+        </div>
+        <div class="news__item">
+          <div class="news__item-photo">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/news__item-photo-2(1150).jpg">
+              <source media="(min-width: 768px)" srcset="img/news__item-photo-2(768).jpg">
+              <img src="img/news__item-photo-2.jpg" alt="" width="260" height="178">
+            </picture>
+          </div>
+          <div class="news__item-descr">
+            <p class="news__item-title">Cup-Cake</p>
+            <span class="news__item-text">Est a elit scelerisque vestibulum. Donec est sem, lobortis sit amet imperdiet vel, pretium lobortis erat. Nulla vitae hendrerit odio.</span>
+            <a href="#" class="btn news__btn">Read more</a>
+          </div>
+        </div>
+        <div class="news__item">
+          <div class="news__item-photo">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/news__item-photo-3(1150).jpg">
+              <source media="(min-width: 768px)" srcset="img/news__item-photo-3(768).jpg">
+              <img src="img/news__item-photo-3.jpg" alt="" width="260" height="178">
+            </picture>
+          </div>
+          <div class="news__item-descr">
+            <p class="news__item-title">Hamburger</p>
+            <span class="news__item-text">Est a elit scelerisque vestibulum. Donec est sem, lobortis sit amet imperdiet vel, pretium lobortis erat. Nulla vitae hendrerit odio.</span>
+            <a href="#" class="btn news__btn">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="subscribe">
+    <div class="subscribe__wrapper">
+      <div class="subscribe__header">
+        <h2 class="subscribe__header-title">Newsletter</h2>
+        <span class="subscribe__header-text">Ut arcu arcu, faucibus eu risus blandit, pulvinar viverra justo</span>
+      </div>
+      <form method="post" action="#" class="subscribe-form">
+        <input type="email" class="subscribe-form__input" name="email" id="email" placeholder="Email adress">
+        <input type="submit" class="btn subscribe-form__btn" value="Sign up">
+      </form>
+    </div>
+  </div>
+  <div class="gallery">
+    <div class="gallery__wrapper">
+      <div class="gallery__header">
+        <h2 class="gallery__header-title">Gallery</h2>
+      </div>
+      <div class="gallery__items">
+        <div class="gallery__item">
+          <div class="gallery__item-photo">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/gallery-item__photo-1(1150).jpg">
+              <source media="(min-width: 768px)" srcset="img/gallery-item__photo-1(768).jpg">
+              <img src="img/gallery-item__photo-1.jpg" with="260" height="195" alt="">
+            </picture>
+          </div>
+          <div class="gallery__item-descr">
+            <p class="gallery__item-title">Carrot cake</p>
+            <span class="gallery__item-text">Est a elit scelerisque vestibulum. Donec est sem, lobortis sit amet imperdiet vel, pretium lobortis erat. Nulla vitae hendrerit odio.</span>
+            <a href="#" class="btn gallery__btn gallery__btn--orange">Sign up</a>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__item-photo gallery__item-photo--reverse">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/gallery-item__photo-2(1150).jpg">
+              <source media="(min-width: 768px)" srcset="img/gallery-item__photo-2(768).jpg">
+              <img src="img/gallery-item__photo-2.jpg" with="260" height="195" alt="">
+            </picture>
+          </div>
+          <div class="gallery__item-descr">
+            <p class="gallery__item-title">Bone-In Ribeye Steak</p>
+            <span class="gallery__item-text">Est a elit scelerisque vestibulum. Donec est sem, lobortis sit amet imperdiet vel, pretium lobortis erat. Nulla vitae hendrerit odio.</span>
+            <a href="#" class="btn gallery__btn gallery__btn--violet">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <a href="#">Panakeia</a>
+        <span>Restaurant</span>
+      </div>
+      <div class="social-links">
+        <a class="social__link" href="#">
+          <svg class="social__link-icon" width="26.943px" height="34.09px">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#vk"></use>
+          </svg>
+        </a>
+        <a class="social__link" href="#">
+          <svg class="social__link-icon" width="26.943px" height="34.09px">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#github-logo"></use>
+          </svg>
+        </a>
+        <a class="social__link" href="#">
+          <svg class="social__link-icon" width="26.943px" height="34.09px">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="js/menu-script.js"></script>
+  <script src="js/picturefill.js"></script>
+</body>
+
+</html>

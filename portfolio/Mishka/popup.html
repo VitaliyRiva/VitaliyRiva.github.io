@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="modal-basket modal-basket--nojs">
+    <div class="modal-basket__wrapper">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <span class="modal-basket__title">Добавить в корзину</span>
+      <span class="modal-basket__text">Выберите размер:</span>
+      <form method="get" action="https://echo.htmlacademy.ru/" class="modal-basket__form">
+        <ul class="modal-basket__items">
+          <li class="modal-basket__item">
+            <input type="radio" name="size" id="sizeS" class="modal-basket__input" value="S">
+            <label for="sizeS" class="modal-basket__size">S</label>
+          </li>
+          <li class="modal-basket__item">
+            <input type="radio" name="size" id="sizeM" class="modal-basket__input" value="M" checked>
+            <label for="sizeM" class="modal-basket__size">M</label>
+          </li>
+          <li class="modal-basket__item">
+            <input type="radio" name="size" id="sizeL" class="modal-basket__input" value="L">
+            <label for="sizeL" class="modal-basket__size">L</label>
+          </li>
+        </ul>
+        <button type="submit" class="modal-basket__button-add">Добавить</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
